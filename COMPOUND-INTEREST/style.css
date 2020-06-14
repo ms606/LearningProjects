@@ -1,0 +1,27 @@
+.table {display: table;}   
+
+.row {display: table-row;}   
+
+.row > * {display: table-cell;}  
+
+.table {
+    border: 0 3px;
+}  
+
+.row > :first-child {    
+    text-align: right;    
+    padding-right: l0px;  
+}  
+
+table {text-align: center;}  
+
+table, th, td {border: none;}  
+
+th, td {padding: l0px;}   
+
+th {    
+    background-color: midnightblue;    
+    color: white;  
+} 
+
+td {background-color: mistyrose;}

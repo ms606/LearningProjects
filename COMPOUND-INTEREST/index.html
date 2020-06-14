@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comppund Interest</title>
+</head>
+
+<body>
+    <h3>Compound Interest Calculator</h3>
+    <form class="table" id="input">
+        <div class="row">
+            <label for="deposit">Initial deposit:</label>
+             <input type="number" id="deposit" min="1" max="9999" step="1"
+                required> </div>
+
+
+        <div class="row"> 
+            <label for="rate">Annual interest rate:</label>
+             <input type="number" id="rate" min="0"
+                max="100" step=".1" required> <span>&nbsp;%</span> </div>
+
+
+        <div class="row"> <label for="years">Years to grow:</label>
+             <input type="number" id="years" min="1" max="20"
+                step="1" required> </div>
+
+
+    </form> <br> 
+    
+    <input type="button" form="input" value="Generate compound interest"
+        onclick="generateTable(this.form);"> <br><br>
+    
+        <div id="result"></div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
