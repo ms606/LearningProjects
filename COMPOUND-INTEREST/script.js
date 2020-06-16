@@ -27,11 +27,11 @@ function generateTable(form){
     while (year <= years) {
         table += '<tr>';
         table += '<td>' + years + '</td>';
-        table += `<td> $${amount}</td>`;
+        table += `<td> PKR ${amount}</td>`;
         interest = (rate/100)*amount;
         interest = +interest;
         table += `<td>${interest}</td>`;    
-        table += `<td>${interest+amount}</td>`;
+        table += `<td>${parseInt(interest) + parseInt(amount)}</td>`;
         table += '</tr>';
         year++
     }    

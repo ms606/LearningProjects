@@ -5,7 +5,8 @@
 .row > * {display: table-cell;}  
 
 .table {
-    border: 0 3px;
+    /*border: 0 3px;*/
+    border-color: black;
 }  
 
 .row > :first-child {    
