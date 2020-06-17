@@ -1,0 +1,11 @@
+fieldset {    
+    display: inline;    border-color: blue;  
+}  
+
+.hidden {display: none;}   
+
+.italic {font-style: italic;}   
+
+.bold {font-weight: bold;}   
+
+.small-caps {font-variant: small-caps;} 

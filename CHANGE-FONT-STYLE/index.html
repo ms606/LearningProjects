@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Font Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Font Size</legend>             
+            <input type="radio" name="fontSize" value="1em" checked>1em<br>
+            <input type="radio" name="fontSize" value="3em">3em<br> 
+            <input type="radio" name="fontSize" value="5em">5em
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Font Features</legend> 
+                <input type="checkbox" name="otherFontFeatures" value="italic">italic<br> 
+                <input type="checkbox" name="otherFontFeatures" value="bold">bold<br> 
+                <input type="checkbox" name="otherFontFeatures" value="small-caps">small-caps
+        </fieldset> <br><br> 
+        
+        <!-- <input type="button" value="Done" id="done" > -->
+        <button type="button" class="button" id="buttonX">Click Me!</button>
+        <!--onclick="applyFontSelections(this.form);"-->
+    </form> <br>
+    
+    <div class="hidden" id="message"> 
+        The Analytical Engine has no pretensions whatever to originate anything. It can do
+        whatever we know how to order it to perform.<br> &mdash; Ada Lovelace, the world's first computer programmer
+    </div>
+
+    
+
+<script src="script.js"></script>
+    
+</body>
+
+</html>
