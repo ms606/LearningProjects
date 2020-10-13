@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if('geolocation' in navigator){
+           navigator.geolocation.getCurrentPosition((position) => {
+            console.log(position);
+            document.getElementById("latitude").textContent = position.coords.latitude;
+            document.getElementById("longitude").textContent = position.coords.longitude;
+           });
+           
+        }
+        else {
+           console.log('geolocation not available') 
+        }
+
+    </script>
+    <h1>
+        Geo Location App
+    </h1>
+
+    <p> latitude: <span id="latitude"></span></p>
+    <p> longitude: <span id="longitude"></span></p>
+</body>
+</html>
