@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Selfie App</h1>
+    <script>
+        getData();
+
+        async function getData(){
+            const response = await fetch('/api');
+            const data = await response.json();
+            console.log(data);
+
+            for (item of data){
+                const root = document.createElement('div');
+
+                const geo = document.createElement('div');
+                geo.innerHTML = `<h1> Geo Location is </h1>
+                                 ${item.lat} , ${item.lon}`;
+//geo.textContent = `<span style="color:pink"> Geo Location is </span>
+                const timestamp = document.createElement('div');
+                timestamp.textContent = `${item.timestamp}`;
+
+                root.append(geo,timestamp);
+                document.body.append(root);
+            }
+
+        }
+    </script>
+
+</body>
+</html>
