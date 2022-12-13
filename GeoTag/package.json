@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongodb": "^3.6.2",
     "nedb": "^1.8.0",
     "nodemon": "^2.0.5"
